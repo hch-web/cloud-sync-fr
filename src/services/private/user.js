@@ -1,10 +1,10 @@
-import { privateAPI } from ".";
+import { privateAPI } from '.';
 
 export const userAPI = privateAPI.injectEndpoints({
-  endpoints: (build) => ({
+  endpoints: build => ({
     getUserDetail: build.query({
-      query: () => "/get-user-detail/",
-      providesTags: ["GetUserDetails"],
+      query: () => '/get-user-detail/',
+      providesTags: ['GetUserDetails'],
     }),
   }),
 });

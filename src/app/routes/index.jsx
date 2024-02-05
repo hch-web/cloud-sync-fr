@@ -3,13 +3,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import GlobalLoader from 'containers/common/loaders/GlobalLoader';
 import PublicRoutes from './PublicRoutes';
-import PrivateRoutes from './PrivateRoutes';
 
-// PAGES HERE LIKE BELOW
-const Dashboard = lazy(() => import('containers/pages/dashboard'));
+const Home = lazy(() => import('containers/pages/home'));
 const Login = lazy(() => import('containers/pages/auth/login'));
-const ForgotPassword = lazy(() => import('containers/pages/auth/forgotPassword'));
-
+const Signup = lazy(() => import('containers/pages/auth/signup'));
 
 function AppRoutes() {
   return (
@@ -19,12 +16,10 @@ function AppRoutes() {
           <Route path="/">
             <Route path="auth" element={<PublicRoutes />}>
               <Route path="login" element={<Login />} />
-              <Route path="forgot-password" element={<ForgotPassword />} />
+              <Route path="signup" element={<Signup />} />
             </Route>
 
-            <Route path="/" element={<PrivateRoutes />}>
-              <Route index element={<Dashboard />} />
-            </Route>
+            <Route index element={<Home />} />
           </Route>
         </Routes>
       </Suspense>
