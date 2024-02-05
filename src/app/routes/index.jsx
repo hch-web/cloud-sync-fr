@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import GlobalLoader from 'containers/common/loaders/GlobalLoader';
+import LayoutWrapper from 'containers/common/layout';
 import PublicRoutes from './PublicRoutes';
 
 const Home = lazy(() => import('containers/pages/home'));
@@ -19,7 +20,9 @@ function AppRoutes() {
               <Route path="signup" element={<Signup />} />
             </Route>
 
-            <Route index element={<Home />} />
+            <Route path="/" element={<LayoutWrapper />}>
+              <Route index element={<Home />} />
+            </Route>
           </Route>
         </Routes>
       </Suspense>
