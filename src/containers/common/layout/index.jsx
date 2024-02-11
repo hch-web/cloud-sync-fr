@@ -1,18 +1,22 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import { Outlet } from 'react-router-dom';
+import propTypes from 'prop-types';
 
 // COMPONENTS
 import Navbar from './components/Navbar';
 
-function LayoutWrapper() {
+function LayoutWrapper({ children }) {
   return (
     <Box>
       <Navbar />
 
-      <Outlet />
+      {children}
     </Box>
   );
 }
+
+LayoutWrapper.propTypes = {
+  children: propTypes.node.isRequired,
+};
 
 export default LayoutWrapper;
