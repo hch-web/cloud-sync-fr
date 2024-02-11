@@ -33,10 +33,6 @@ function PricingSection() {
         <Typography variant="h4" fontWeight={600} textAlign="center" mb={2} color="primary">
           Choose Your Plan
         </Typography>
-
-        <Typography variant="body1" textAlign="center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem.
-        </Typography>
       </Box>
 
       <Box>
