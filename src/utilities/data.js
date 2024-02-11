@@ -108,3 +108,26 @@ export const clientsData = [
     image: client5,
   },
 ];
+
+export const navLinks = [
+  {
+    id: 1,
+    label: 'About',
+    href: 'about-container',
+  },
+  {
+    id: 2,
+    label: 'Services',
+    href: 'services-container',
+  },
+  {
+    id: 3,
+    label: 'Pricing',
+    href: 'pricing-container',
+  },
+  {
+    id: 4,
+    label: 'Contact',
+    href: 'contact-container',
+  }
+];

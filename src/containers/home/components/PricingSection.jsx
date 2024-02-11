@@ -28,7 +28,7 @@ function PricingSection() {
   }, []);
 
   return (
-    <Container fixed className="my-5 py-5">
+    <Container id="pricing-container" fixed className="my-5 py-5">
       <Box mb={5}>
         <Typography variant="h4" fontWeight={600} textAlign="center" mb={2} color="primary">
           Choose Your Plan

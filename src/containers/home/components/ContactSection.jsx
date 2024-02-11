@@ -7,7 +7,7 @@ import TextField from 'containers/common/components/TextField';
 
 function ContactSection() {
   return (
-    <Box sx={contactSectionStyles}>
+    <Box id="contact-container" sx={contactSectionStyles}>
       <Container fixed>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>

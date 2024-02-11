@@ -6,7 +6,7 @@ import { clientsData } from 'utilities/data';
 
 function HappyClientsSection() {
   return (
-    <Box className="p-5" bgcolor="#f8f1ff">
+    <Box id="happy-clients-container" className="p-5" bgcolor="#f8f1ff">
       <Typography variant="h4" fontWeight={600} textAlign="center" mb={2} color="primary">
         Our Happy Clients
       </Typography>

@@ -3,7 +3,7 @@ import React from 'react';
 
 function AboutSection() {
   return (
-    <Container fixed className="text-center my-5 py-5">
+    <Container id="about-container" fixed className="text-center my-5 py-5">
       <Typography variant="h4" mb={3} fontWeight={600} color="primary">
         ABOUT US
       </Typography>
