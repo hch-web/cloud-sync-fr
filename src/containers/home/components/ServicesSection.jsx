@@ -15,7 +15,7 @@ function ServicesSection() {
           </Typography>
 
           <Typography variant="body1" textAlign="center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum tortor sem.
+            Explore our comprehensive suite of cloud solutions tailored to elevate your digital landscape and streamline your operations.
           </Typography>
         </Box>
 
