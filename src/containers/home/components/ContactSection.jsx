@@ -16,11 +16,13 @@ function ContactSection() {
             </Typography>
 
             <Typography variant="body1" mb={2}>
-              Lorem ipsum dolor sit amet de consecutuer
+              ❤️ from CloudSync Team
             </Typography>
 
             <Typography variant="body1" mb={4}>
-              Tel: 123-456-7890
+              Tel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+92 300 1234567
+              <br />
+              Email: sales@cloudsync.com
             </Typography>
 
             <Stack direction="row" spacing={2}>
